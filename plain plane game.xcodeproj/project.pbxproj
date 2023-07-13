@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1818D7652A5F778E00D14AD0 /* explosion.png in Resources */ = {isa = PBXBuildFile; fileRef = 1818D7642A5F778E00D14AD0 /* explosion.png */; };
 		43745200193D163700654986 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437451FF193D163700654986 /* AppDelegate.swift */; };
 		43745202193D163700654986 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 43745201193D163700654986 /* GameScene.sks */; };
 		43745204193D163800654986 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43745203193D163800654986 /* GameScene.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1818D7642A5F778E00D14AD0 /* explosion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = explosion.png; sourceTree = "<group>"; };
 		437451FA193D163700654986 /* Plain Plane Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plain Plane Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		437451FE193D163700654986 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		437451FF193D163700654986 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		437451FC193D163700654986 /* plainplanegame */ = {
 			isa = PBXGroup;
 			children = (
+				1818D7642A5F778E00D14AD0 /* explosion.png */,
 				6E1623DF1E24FC4E00FB2C72 /* LaunchScreen.storyboard */,
 				437451FF193D163700654986 /* AppDelegate.swift */,
 				43745201193D163700654986 /* GameScene.sks */,
@@ -210,6 +213,7 @@
 				4374520B193D163800654986 /* Images.xcassets in Resources */,
 				43745202193D163700654986 /* GameScene.sks in Resources */,
 				437A3DBA193D326A00909BA0 /* bird.atlas in Resources */,
+				1818D7652A5F778E00D14AD0 /* explosion.png in Resources */,
 				6E1623E01E24FC4E00FB2C72 /* LaunchScreen.storyboard in Resources */,
 				43745209193D163800654986 /* Main.storyboard in Resources */,
 			);

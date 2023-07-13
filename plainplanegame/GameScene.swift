@@ -237,14 +237,28 @@ class GameScene: SKScene, SKPhysicsContactDelegate{
                 
                 
                 // Flash background if contact is detected
-                self.removeAction(forKey: "flash")
+                /* self.removeAction(forKey: "flash")
                 self.run(SKAction.sequence([SKAction.repeat(SKAction.sequence([SKAction.run({
                     self.backgroundColor = SKColor(red: 1, green: 0, blue: 0, alpha: 1.0)
                     }),SKAction.wait(forDuration: TimeInterval(0.05)), SKAction.run({
                         self.backgroundColor = self.skyColor
                         }), SKAction.wait(forDuration: TimeInterval(0.05))]), count:4), SKAction.run({
                             self.canRestart = true
-                            })]), withKey: "flash")
+                            })]), withKey: "flash") */
+                self.removeAction(forKey: "flash")
+
+                let explosionTexture = SKTexture(imageNamed: "explosion") // Assuming your explosion image is named "explosion.png"
+                let explosionNode = SKSpriteNode(texture: explosionTexture)
+                explosionNode.position = CGPoint(x: self.frame.midX, y: self.frame.midY)
+                self.addChild(explosionNode)
+
+                let fadeOutAction = SKAction.fadeOut(withDuration: 0.5)
+                let removeAction = SKAction.removeFromParent()
+                let explosionSequence = SKAction.sequence([fadeOutAction, removeAction])
+
+                explosionNode.run(explosionSequence, completion: {
+                    self.canRestart = true
+                })
             }
         }
     }
